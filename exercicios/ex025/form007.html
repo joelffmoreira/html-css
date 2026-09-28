@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="registo.php" method="post" autocomplete="on">
+        <p>
+            <label for="idist">Distrito: </label>
+            <select name="distrito" id="idist">
+
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Norte">
+                    <option value="BR">Braga</option>
+                    <option value="AV">Aveiro</option>
+                    <option value="PO">Porto</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="LI">Lisboa</option>
+                    <option value="BE">Beja</option>
+                    <option value="FA">Faro</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="ipro">Profissão: </label>
+            <input type="text" name="profissao" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
