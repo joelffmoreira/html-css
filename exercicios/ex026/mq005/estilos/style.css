@@ -44,6 +44,8 @@ menu > ul {
 menu > ul > li > a {
     display: block;
     padding: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
     text-decoration: none;
     text-align: center;
     background-color: rgb(87, 87, 87);
